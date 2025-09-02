@@ -29,4 +29,4 @@ A conversational bot built using **AWS Lex**, **AWS Lambda**, **DynamoDB**, and 
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/your-username/academic-registration-bot.git
-   cd academic-registration-bot
+   cd academic-bot
