@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+     background-color: #1E3A8A; /* deep blue */
+      color: white;
+      padding: 15px;
+      
+      font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+.title h3{
+
+    padding: 5px;
+    font-size: 20px;
+          text-align: center;
+      font-weight: 600;
+      letter-spacing: 1px;
+}
+
+.title div{
+
+    font-style: italic;
+}
+
+.chatmessage-container{
+    height: 80vh;
+    padding: 0 10%;
+}
+
+input{
+    border: none;
+    flex: 0.8;
+    height: 100%;
+}
+
+.input-container {
+    border: 3px solid #1E3A8A;
+    position: fixed;
+    bottom: 0;              
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;     /* vertical center */
+    padding: 10px 15px;
+    background: white;       /* background behind input */
+    box-sizing: border-box;  /* padding doesn't overflow */
+}
+
+/* Input field */
+.input-container input {
+    flex: 1;                /* take available space */
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;          /* remove blue outline */
+    border-radius: 6px;
+}
+
+/* Send button image */
+.input-container img {
+    height: 28px;
+    width: 28px;
+    margin-left: 10px;      /* spacing from input */
+    cursor: pointer;        /* make it clickable */
+    transition: transform 0.2s ease;
+}
+
+.input-container img:hover {
+    transform: scale(1.1);  /* little zoom effect on hover */
+}
+.message {
+  max-width: 70%;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  word-wrap: break-word;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+#chat {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 130px); /* total minus title + input */
+  background: #f9fafb;
+  padding-bottom: 10%;
+}
+/* User messages: right-aligned, blue */
+.message.user {
+  background: #2563EB;
+  color: white;
+  margin-left: auto;  /* pushes it to the right */
+  border-bottom-right-radius: 2px;
+}
+
+/* Bot messages: left-aligned, gray */
+.message.bot {
+  background: #E5E7EB;
+  color: #111827;
+  margin-right: auto; /* pushes it to the left */
+  border-bottom-left-radius: 2px;
+}

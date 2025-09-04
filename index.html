@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Registeration Assistant</title>
+    <link rel="stylesheet" href="index.css"/>
+     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1306.0.min.js"></script>
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="title">
+           <h3> Academic Registeration Assistant</h3>
+           <div>Contributors : Hardik Agrawal , Pradyumn Agrawal , Sparsh Gupta , Alok Desai</div>
+        </div>
+        <div id="chat">
+        </div>
+        <div class="input-container">
+            <input type="text" id="message" placeholder="Enter your prompt"/>
+            <div onclick="sendMessage()"><img src="paper-plane-top.png" alt="send"/></div>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
