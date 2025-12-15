@@ -28,7 +28,7 @@ A conversational bot built using **AWS Lex**, **AWS Lambda**, **DynamoDB**, and 
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/academic-registration-bot.git
+   git clone https://github.com/hardikcode-creator/academic-registration-bot.git
    cd academic-bot
 ## Live Website
 Check out the live website here: [Academic Registration Assistant](http://course-registeration-assistant-website.s3-website-us-east-1.amazonaws.com/)
